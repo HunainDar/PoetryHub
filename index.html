@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoetryHub</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            font-family: 'Merriweather', serif;
+        }
+        .intro {
+            background: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .intro img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .poetry-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .poetry-box {
+            width: 90%;
+            max-width: 500px;
+            margin: 15px;
+            padding: 15px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            transition: transform 0.2s;
+        }
+        .poetry-box:hover {
+            transform: scale(1.02);
+        }
+        .poet {
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .urdu {
+            font-family: 'Jameel Noori Nastaleeq', serif;
+            direction: rtl;
+            text-align: right;
+            line-height: 2;
+        }
+        .sidebar {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 250px;
+        }
+        .sidebar img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PoetryHub</h1>
+       <h2>Explore Poetry in Urdu and English</h2>
+        <p>Immerse yourself in the beauty of words</p>
+    </header>
+
+    <!-- Author's Introduction Section -->
+    <div class="intro">
+        <img src="https://i.imgur.com/oXFpgaGb.jpg">
+        <h2>About the Editor</h2>
+        <p>Hello! I'm M.HUNAIN DAR, a passionate lover of poetry. Through this platform, I aim to share my thoughts and emotions captured in words. I hope these poems resonate with you and inspire your own poetic journey.</p>
+    </div>
+
+    <div class="poetry-section">
+        <!-- English Poetry Stanzas -->
+        <div class="poetry-box">
+            <p>Two roads diverged in a wood, and I—<br> I took the one less traveled by,<br> And that has made all the difference.</p>
+            <div class="poet">- Robert Frost</div>
+        </div>
+        <div class="poetry-box">
+            <p>Hope is the thing with feathers<br> That perches in the soul,<br> And sings the tune without the words,<br> And never stops at all.</p>
+            <div class="poet">- Emily Dickinson</div>
+        </div>
+        
+        <!-- Urdu Poetry Stanzas -->
+        <div class="poetry-box urdu">
+            <p>اُس نے جلتے ہوئے دیکھا ہے کبھی جاڑے میں<br> آگ اک مٹھی بھر، ہاتھ سینکنے والے</p>
+            <div class="poet">- فیض احمد فیض</div>
+        </div>
+        <div class="poetry-box urdu">
+            <p>ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے<br> بہت نکلے میرے ارمان لیکن پھر بھی کم نکلے</p>
+            <div class="poet">- غالب</div>
+        </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <h3>Popular Poets</h3>
+        <ul>
+            <li>William Wordsworth</li>
+            <li>Maya Angelou</li>
+            <li>Mirza Ghalib</li>
+            <li>Emily Dickinson</li>
+            <li>Faiz Ahmad Faiz</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 PoetryHub. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
